@@ -1,0 +1,31 @@
+name: enviroment_sensors
+version: dev
+slug: enviroment_sensors
+description: "This addon is to collect indicators of enviroment"
+arch:
+  - aarch64
+  - amd64
+  - armv7
+map:
+  - ssl
+  - bmp180
+  - bmp280
+  - sht31
+  - sht45
+  - oxygen
+options:
+  bmp180: false
+  bmp280: false
+  sht31: false
+  sht45: false
+  oxygen: false
+schema:
+  bmp180: bool
+  bmp280: bool
+  sht31: bool
+  sht45: bool
+  oxygen: bool
+devices:
+  - "/dev/i2c-5:rwm"
+homeassistant_api: true
+hassio_api: true
